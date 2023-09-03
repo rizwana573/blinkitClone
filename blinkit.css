@@ -1,0 +1,484 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Roboto', Helvetica;
+}
+nav{
+    background-color: white;
+    height: 86px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    display: flex;
+    flex-wrap: nowrap;
+}
+.headerLeft{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+.headerRight{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    gap: 5px;
+}
+.loginBtn{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s;
+}
+.loginBtn .btn{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    font-family: Roboto;
+    transition: font-size 0.5s ease 0s;
+    background: none;
+}
+.cartBtn{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    display: flex;
+}
+.cartBtn .fa-cart-shopping:hover {
+    animation: 0.6s ease 0s 2 normal none running cartHover;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.multiImageGrid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.sliderTitle{
+    color: rgb(28, 28, 28);
+    font-size: 28px;
+    font-family:Roboto;
+    font-weight: 700;
+    display: flex;
+    flex: 1 1 0%;
+    background: transparent;
+    line-height: 32px;
+}
+.SliderProductHeader__Container{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 0px 12px;
+}
+
+.multiImageGrid .imageContainer{
+    height: 188.235px;
+    width: 128px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.widgetCards{
+    /* display: flex; */
+    max-width: 100%;
+    overflow: auto hidden;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    column-gap: 20px;
+    margin: 16px;
+    padding: 0;
+}
+.widgetCards li{
+    display: flex;
+    height: 195px;
+    width: 335.4px;
+    cursor: pointer;
+}
+@keyframes cartHover {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.cartBtn .fa-cart-shopping{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-right: 8px;
+}
+.cartBtn .btn{
+     background-color: rgb(12, 131, 31);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    height: 52px;
+    width: 112px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-weight:700;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.fa-magnifying-glass{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(31, 31, 31);
+    margin: auto 0;
+}
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+nav div{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+.verticalDivider{
+    width: 1px;
+    display: flex;
+    background-color: rgb(242, 242, 242);
+    height: 86px;
+}
+.searchbarContainer{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
+    position: relative;
+    background-color: inherit;
+}
+.searchBtn{
+    width: 100%;
+    padding: 0px 12px;
+    height: 46px;
+    display: flex;
+    gap: 8px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+}
+.locationTitle{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.locationSubtitle{
+    display: flex;
+    flex-direction: row;
+}
+.locationSubtitle .subText{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+    max-width: 210px;
+    text-overflow: ellipsis;
+}
+.arrowContainer{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.downArrow{
+    width: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgb(0, 0, 0);
+    margin-left: 8px;
+}
+.locationContainer{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.logo a{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    width: 178px;
+    display: flex;
+}
+.headerLeft{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+.seeAllBtn{
+    line-height: 32px;
+    font-size: 20px;
+    color: rgb(12, 131, 31);
+    cursor: pointer;
+ 
+    font-family: Roboto;
+}
+.iZBVAQ {
+    max-width: 1280px;
+    margin: 48px auto auto;
+    transition: all 0.4s ease 0s;
+}
+.cwIfVL {
+    width: auto;
+    margin: 20px auto 40px;
+}
+body .owl-theme .owl-dots .owl-dot{
+    display: none;
+}
+*, :before, :after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(37 111 239 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+.hyzNyz {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.aonOx {
+    font-family: Roboto;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 24px 0px;
+}
+.fBgyNM {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12px 24px;
+}
+
+.BvTiN {
+    display: inline-block;
+    font-size: 14px;
+}
+.jqmuYk {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px 24px;
+}
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hOxyYr {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: auto;
+    background-color: rgb(252, 252, 252);
+    max-width: 100%;
+}
+.csBNXw {
+    padding: 16px 0px;
+    width: auto;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.bLeZQJ {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.kymqhZ {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-family: OKRA-REGULAR;
+    line-height: 18px;
+    margin: 12px;
+}
+.cPxShR {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.jgvGfq {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.hnVuxl {
+    font-family: Okra;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 16px;
+}
+.gyBsbb {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.lilmRt {
+    height: 30px;
+    width: 92px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.jgvGfq {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.gyBsbb {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.iSSvsj {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:1260px){
+    .cwIfVL {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .locationContainer{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    cursor: pointer;
+    width: 320px;
+    }
+    .loginBtn{
+        width: 162px;
+    }
+    .cartBtn{
+        margin-right: 32px;
+        margin-left: 12px;
+    }
+}
